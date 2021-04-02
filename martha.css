@@ -1,0 +1,90 @@
+img{
+    width: 400px;
+    height:300px;
+    transition: 2s all;
+}
+
+img:hover{
+    width:450px;
+    height:250;
+}
+
+.images>img{
+    margin:10px;
+}
+
+section>a{
+    font-family: cursive;
+    transition: 0.8s color;
+}
+
+section>a:hover{
+    color:blueviolet;
+}
+
+.container{
+    display:grid;
+    grid-template-rows: 7% 93%;
+}
+
+.heading{
+    height:300px;
+    background:linear-gradient(to right,red,pink,white,pink,red);
+    text-align: center;
+}
+
+.heading1{
+    text-align:center;
+    
+}
+
+.about-me{
+    background:linear-gradient(to bottom,rgba(238, 21, 148, 0.6),pink,pink,pink,rgba(238,21,148,0.938));
+    font-family:sans-serif;
+    margin:10px;
+    padding:5px;
+   
+    
+}
+
+section{
+    margin-left:5px;
+}
+
+.matha{
+    float:right;
+    width:400px;
+    height:300px;
+}
+
+.images{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.heading{
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes anime{
+    0%{
+        transform:translate(0px,0px);
+    }
+    30%
+    {
+        transform:translate(5px,5px);
+    }
+    90%
+    {
+        transform:translate(10px,15px);
+    }
+    100%
+    {
+        transform:translate(15px,20px);
+    }
+}
